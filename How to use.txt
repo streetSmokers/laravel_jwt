@@ -1,11 +1,41 @@
-About :
-App user_login : Laravel
-App auth_user : Lumen
-Database : postgresql
+-----------------
+Laravel JWT Login
+-----------------
+Author 		==> Ahmad Ridha
+Email 		==> ahmadridha.msg@gmail.com
+Repository 	==> https://github.com/streetSmokers/laravel_jwt
+App user_login 	==> Framework Laravel
+App auth_user 	==> Framework Lumen
+Database 	==> PostgreSQL
 
-Step :
-1. Running app auth_user port:8000
-2. migrate table
-3. run seeder
-4. Running app user_login port:8081
+
+-----------------------
+Install [user_login] app:
+-----------------------
+1. Download [user_login] from repository ==> https://github.com/streetSmokers/laravel_jwt
+2. From directory project Install composer
+3. Rename .env.example to .env
+4. Generate key ==> php artisan key:generate
+5. Run app user_login, port:8081
+
+
+----------------------
+Install [auth_user] app:
+----------------------
+1. Download [auth_user] from repository ==> https://github.com/streetSmokers/laravel_jwt
+2. From directory project install composer
+3. Rename .env.example to .env
+4. Setup Database Connection:
+
+	DB_CONNECTION=pgsql
+	DB_HOST=127.0.0.1
+	DB_PORT=5432
+	DB_DATABASE=[Your Database]
+	DB_USERNAME=[Your Username]
+	DB_PASSWORD=[Your Password]
+
+5. Generate secret key ==> php artisan jwt:secret
+6. Migration table ==> php artisan migrate
+7. Run Seeder ==> php artisan db:seed
+8. Run app auth_user, port:8000
 
