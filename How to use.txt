@@ -1,0 +1,11 @@
+About :
+App user_login : Laravel
+App auth_user : Lumen
+Database : postgresql
+
+Step :
+1. Running app auth_user port:8000
+2. migrate table
+3. run seeder
+4. Running app user_login port:8081
+
